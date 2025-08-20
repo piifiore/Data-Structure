@@ -4,6 +4,8 @@
 int min(int a[], int n, int i);
 void print_min(int a[], int n);
 void delete_from_positin(int a[], int n);
+void inseret_in_position(int a[], int n);
+
 
 int main(int argc, char *argv[])
 {
@@ -13,7 +15,9 @@ int main(int argc, char *argv[])
 
   //print_min(a, n);
 
- delete_from_positin(a, n);
+//  delete_from_positin(a, n);
+
+inseret_in_position(a,n);
 
   
 
@@ -96,6 +100,48 @@ void delete_from_positin(int a[], int n)
 
 }
 
+void inseret_in_position(int a[], int n)
+{
+
+  int x;
+  int j;
+  int k = 0;
+  int b[MAXLEN];
+
+  printf("che elemnto vuoi aggiungere x?:");
+  scanf("%d", &x);
+
+  printf("che posizione vuoi aggiungere x?:");
+  scanf("%d", &j);
+
+ 
+  
+  if (j < 0 || j > n || n + 1 > MAXLEN) {
+        printf("Posizione non valida\n");
+    } else {
+        for (int i = 0; i < n; i++) {
+            if (k == j) {
+                b[k++] = x;
+            }
+            b[k++] = a[i];
+        }
+
+       
+        if (j == n) {
+            b[k++] = x;
+        }
+      
+       for (int i = 0; i < n; i++)
+       {
+        printf("%d\n", b[i]);
+       }
+       
+
+    }
+    
+    
+  }
+  
 
 
 
