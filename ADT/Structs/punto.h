@@ -1,7 +1,4 @@
-typedef struct {
-float x;
-float y;
-} punto;
+typedef struct pto *punto;
 
 punto creaPunto (float x, float y);
 float ascissa (punto p);
