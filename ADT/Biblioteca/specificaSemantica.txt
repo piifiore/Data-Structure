@@ -1,0 +1,53 @@
+Esercizio Biblioteca (Strutture Dati)
+
+Strutture da implementare:
+
+Libro:
+Sintassi -> e' una struttura dati che contiene le seguenti informazioni: 
+
+	1.Titolo: stringa
+	2.Autore: stringa
+	3.Anno di uscita: int
+	4.Puntatore a successivo: pointer a Libro
+
+Semantica -> Rappresenta un libro in una biblioteca ordinata sequanzialmente
+
+ListaLibri:
+
+Sintassi -> e` una struttura dati che contiene queste info:
+	
+	1.primo: puntatore a Libro
+
+Semantica -> Rappresenta l'intera collezione di libri nella biblioteca, con un puntatore al primo libro nella lista.
+///////
+Fuzioni da implementare:
+
+AggiungiLibro:
+	
+	Sintassi: AggiungiLibro(ListaLibri *, char*, char*, int);
+	Semantica: Aggiunge libro alla lista
+	Pre: La lista esiste 
+	Post: Il libro viene aggiunto alla lista
+
+RimuoviLibro:
+	
+	Sintassi: RimuoviLibro(ListaLibri L, char*);
+	Semantica: Rimuove libro dalla lista in base al titolo
+	Pre: La lista esiste e non e' vuota
+	Post: Il libro viene tolto dalla lista
+
+CercaLibro:
+
+	Sintassi: CercaLibro(ListaLibri L, char*);
+	Semantica: Trova il libro in base al titolo
+	Pre: La lista esiste
+	Post: Restituisce il puntatore al libro se trovato, altrimenti NULL.
+
+StampaListaLibri
+
+	Sintassi: StampaListaLibri(ListaLibri*);
+	Semantica: restituisce la lista di libri
+	Pre: La lista esiste
+	Post: Restituisce la lista completa all'utente
+
+
