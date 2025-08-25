@@ -1,13 +1,17 @@
 #ifndef BIBLIOTECA_H  // Inizia la guardia di inclusione per evitare inclusioni multiple dello stesso header
 #define BIBLIOTECA_H  // Definisce un simbolo unico per indicare che questo file è già incluso
 
-typedef struct Libro
+
+
+
+ typedef struct Libro
 {
     char *titolo;
     char *autore;
     int annoPubblicazione;
-    Libro *prossimo;
+    struct Libro *prossimo;
 }Libro;
+
 
 typedef struct ListaLibri
 {

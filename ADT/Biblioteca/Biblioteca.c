@@ -61,7 +61,7 @@ Libro CercaLibro(ListaLibri *lista, char *titolo)
     if (corrente == NULL)
     {
         printf("libro non trovato");
-        return ;
+        EXIT_FAILURE;
     } else
     {
         return *corrente;
