@@ -138,3 +138,52 @@ list reverseList(list l)
  return rev; // Restituisce la lista invertita
 }
 
+
+//inserimento nella lista
+
+list insertListV1(list l, int pos, item val)
+{
+  int i ,p;
+  list l2 = newList();
+  item temp;
+
+  p = sizeList(l);
+
+  if (p < 0)
+  {
+    return NULL;
+  }
+
+  for ( i = 0; i < p; i++)
+  {
+       
+     l2 = consList(l2, temp);
+    l = tailList(l);
+
+    if (i <= pos)
+    {
+
+     l2 = consList(l2, val);
+
+    }
+    
+  }
+
+  return reverseList(l2);
+  
+}
+
+list inseetListV2(list l, int pos, item val)
+{
+
+  item x;
+  int i = 0;
+  list tempList = newList();
+  list l2 = newList();
+
+  
+
+
+
+
+}
