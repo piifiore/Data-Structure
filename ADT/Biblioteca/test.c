@@ -15,7 +15,9 @@ AggiungiLibro(&L, "Cumbliners", "james Cockyce", 1914);
 
 CercaLibro(&L, "il conte di MonteCazzo");
 
-RimuoviLIbro(&L, "Il ritratto di Dorian Gay");
+
+
+// RimuoviLIbro(&L, "Il ritratto di Dorian Gay");
 
 StampaListaLibri(&L);
 

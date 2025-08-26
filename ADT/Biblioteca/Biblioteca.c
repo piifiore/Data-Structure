@@ -67,7 +67,6 @@ Libro CercaLibro(ListaLibri *lista, char *titolo)
         return *corrente;
     }
 
-    printf(corrente);
     
     
     
